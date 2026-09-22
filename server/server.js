@@ -11,7 +11,7 @@ const authRoutes = require("./routes/auth");
 const capsuleRoutes = require("./routes/capsules");
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001;
 
 // --- sanity check required env vars up front, so misconfiguration fails loudly ---
 ["JWT_SECRET", "GITHUB_CLIENT_ID", "GITHUB_CLIENT_SECRET", "GITHUB_CALLBACK_URL"].forEach((key) => {
